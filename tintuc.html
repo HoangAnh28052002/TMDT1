@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["IPhone", "Samsung", "Xiaomi", "Oppo", ];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://doanhnghiepvn.vn/kinh-doanh-va-tieu-dung/xiaomi-13t-va-13t-pro-trinh-lang-camera-leica-sac-120w-cau-hinh-sieu-khung-gia-hon-16-trieu-dong/20230926084347308" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Xiaomi 13T và 13T Pro trình làng: Camera Leica, sạc 120W, cấu hình ‘siêu khủng’, giá hơn 16 triệu đồng</h2>
+                </a>
+                <br/>
+                <h5>Kinh doanh và tiêu dùng &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://thanhnien.vn/samsung-galaxy-z-flip5-va-galaxy-z-fold5-ra-mat-gia-tu-26-trieu-dong-185230726193404914.htm" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>Samsung Galaxy Z Flip5 và Galaxy Z Fold5 ra mắt, giá từ 26 triệu đồng</h2>
+                </a>
+                <br/>
+                <h5>Thanh niên &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vov.vn/cong-nghe/sanh-dieu/redmi-note-13-pro-5g-ra-mat-voi-cau-hinh-tot-gia-re-post1047657.vov" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>Redmi Note 13 Pro 5G ra mắt với cấu hình tốt, giá rẻ</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.24h.com.vn/the-gioi-cong-nghe/iphone-15-ra-mat-4-cap-nhat-lan-dau-xuat-hien-c674a1501426.html" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>iPhone 15 ra mắt: 4 cập nhật lần đầu xuất hiện</h2>
+                </a>
+                <br/>
+                <h5>Tin tức 24h &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://www.sggp.org.vn/oppo-find-n3-flip-se-som-co-mat-tai-viet-nam-post703363.html" target="_blank">
+                    <img src="img/tintuc/tintuc5.jpg" height="148px" width="224px;">
+                    <h2>OPPO Find N3 Flip sẽ sớm có mặt tại Việt Nam</h2>
+                </a>
+                <br/>
+                <h5>kinhtedothi &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
